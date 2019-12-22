@@ -120,9 +120,29 @@ class ViewController: UIViewController {
       resetBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
       resetBtn.layer.cornerRadius = 20
 
+      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+      self.navigationController?.navigationBar.shadowImage = UIImage()
+      self.navigationController?.navigationBar.isTranslucent = true
+
+      self.navigationController?.navigationBar.barStyle = .black
+
       // Do any additional setup after loading the view.
    }
 
+   override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+      self.navigationController?.navigationBar.shadowImage = UIImage()
+      self.navigationController?.navigationBar.isTranslucent = true
+      self.navigationController?.navigationBar.barStyle = .black
+   }
+
+   override func viewWillDisappear(_ animated: Bool) {
+      super.viewWillDisappear(animated)
+      self.navigationController?.navigationBar.barStyle = .default
+      self.navigationController?.navigationBar.shadowImage = nil
+      self.navigationController?.navigationBar.isTranslucent = true
+   }
 
 }
 
