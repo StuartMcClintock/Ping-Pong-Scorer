@@ -110,10 +110,15 @@ class ViewController: UIViewController {
       let app = UIApplication.shared
       del = app.delegate as? AppDelegate
 
-      p1ScoreBtn.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+      p1ScoreBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
       p1ScoreBtn.layer.cornerRadius = 20
-      p2ScoreBtn.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+      p2ScoreBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
       p2ScoreBtn.layer.cornerRadius = 20
+
+      settingsBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      settingsBtn.layer.cornerRadius = 20
+      resetBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      resetBtn.layer.cornerRadius = 20
 
       // Do any additional setup after loading the view.
    }
