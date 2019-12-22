@@ -115,9 +115,9 @@ class ViewController: UIViewController {
       p2ScoreBtn.backgroundColor = .lightGray//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
       p2ScoreBtn.layer.cornerRadius = 10
 
-      settingsBtn.backgroundColor = .white//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      settingsBtn.backgroundColor = UIColor(red: 0.79, green: 0.79, blue: 0.79, alpha: 1)
       settingsBtn.layer.cornerRadius = 10
-      resetBtn.backgroundColor = .white//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      resetBtn.backgroundColor = UIColor(red: 0.79, green: 0.79, blue: 0.79, alpha: 1)
       resetBtn.layer.cornerRadius = 10
 
       self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
