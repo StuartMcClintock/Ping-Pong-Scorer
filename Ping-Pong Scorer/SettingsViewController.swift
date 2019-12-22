@@ -16,8 +16,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
    @IBOutlet weak var pointsNeededLabel: UILabel!
    @IBOutlet weak var pointsNeededStepper: UIStepper!
    @IBOutlet weak var serveModeTable: UITableView!
-   let optionsServe: [String] = ["Change server every two points",
-   "Winner of previous point serves", "Loser of previous point serves"]
+   let optionsServe: [String] = ["Change server every 2 points",
+   "Winner of last point serves", "Loser of last point serves"]
    
    @IBAction func updateLeadBy2(_ sender: Any) {
       del.mustBeAheadBy2 = leadBy2Switch.isOn
