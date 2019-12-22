@@ -110,15 +110,15 @@ class ViewController: UIViewController {
       let app = UIApplication.shared
       del = app.delegate as? AppDelegate
 
-      p1ScoreBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
-      p1ScoreBtn.layer.cornerRadius = 20
-      p2ScoreBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
-      p2ScoreBtn.layer.cornerRadius = 20
+      p1ScoreBtn.backgroundColor = .lightGray//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      p1ScoreBtn.layer.cornerRadius = 10
+      p2ScoreBtn.backgroundColor = .lightGray//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      p2ScoreBtn.layer.cornerRadius = 10
 
-      settingsBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
-      settingsBtn.layer.cornerRadius = 20
-      resetBtn.backgroundColor = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
-      resetBtn.layer.cornerRadius = 20
+      settingsBtn.backgroundColor = .white//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      settingsBtn.layer.cornerRadius = 10
+      resetBtn.backgroundColor = .white//UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+      resetBtn.layer.cornerRadius = 10
 
       self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
       self.navigationController?.navigationBar.shadowImage = UIImage()
