@@ -25,19 +25,19 @@ class ViewController: UIViewController {
    @IBOutlet weak var settingsBtn: UIButton!
    
    func findWinner() -> Int{ // Returns 0 if nobody won, 1 for player 1 and 2 for player 2
-      if del.mustBeAheadBy2{
-         if p1Score-p2Score >= 2 && p1Score >= del.winningScore{
+      if del.getMustBeAheadBy2(){
+         if p1Score-p2Score >= 2 && p1Score >= del.getWinningScore(){
             return 1
          }
-         if p2Score-p1Score >= 2 && p2Score >= del.winningScore{
+         if p2Score-p1Score >= 2 && p2Score >= del.getWinningScore(){
             return 2
          }
       }
       else{
-         if p1Score == del.winningScore{
+         if p1Score == del.getWinningScore(){
             return 1
          }
-         if p2Score == del.winningScore{
+         if p2Score == del.getWinningScore(){
             return 2
          }
       }
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
       let winner: Int = findWinner()
       if (winner==0){
          var server1: Bool = false
-         switch del.serveChange!{
+         switch del.getServeChange(){
          case .everyTwoScores:
             let totalPoints: Int = p1Score+p2Score
             server1 = totalPoints%4 == 0 || totalPoints%4 == 1

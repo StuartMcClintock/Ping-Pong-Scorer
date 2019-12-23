@@ -12,6 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
    var window: UIWindow?
+   var defVals: UserDefaults!
+
 
    enum ServeChangeType{
       case everyTwoScores
@@ -19,17 +21,88 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       case loserServes
    }
 
-   var serveChange: ServeChangeType!
-   var winningScore: Int!
-   var mustBeAheadBy2: Bool!
+   func serveChangeToInt(s: ServeChangeType) -> Int{
+      switch s{
+      case .everyTwoScores:
+         return 1
+      case .winnerServes:
+         return 2
+      case .loserServes:
+         return 3
+      }
+   }
+
+   func intToServeChange(num: Int) -> ServeChangeType{
+      switch num{
+      case 2:
+         return .winnerServes
+      case 3:
+         return .loserServes
+      default:
+         return .everyTwoScores
+      }
+   }
+
+   private var serveChange: ServeChangeType!
+   private var winningScore: Int!
+   private var mustBeAheadBy2: Bool!
    var selectedServe: [Bool]!
+
+   func setServeChange(val: Int){
+      serveChange = intToServeChange(num: val)
+      defVals.set(val, forKey:"serveChange")
+   }
+
+   func getServeChange() -> ServeChangeType{
+      return serveChange
+   }
+
+   func setMustBeAheadBy2(val: Bool){
+      mustBeAheadBy2=val
+      defVals.set(!val, forKey: "opposite of mustBeAheadBy2")
+   }
+   func getMustBeAheadBy2() -> Bool{
+      return mustBeAheadBy2
+   }
+
+   func setWinningScore(score: Int){
+      winningScore = score
+      defVals.set(winningScore, forKey: "winningScore")
+   }
+   func getWinningScore() -> Int{
+      return winningScore
+   }
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       // Override point for customization after application launch.
-      serveChange = .everyTwoScores
-      winningScore = 11
-      mustBeAheadBy2 = true
-      selectedServe = [true, false, false]
+      defVals = UserDefaults.standard
+      let storedWS: Int = defVals.integer(forKey: "winningScore")
+      if storedWS == 0{
+         winningScore = 11
+      }
+      else{
+         winningScore = storedWS
+      }
+
+      let storedSC: Int = defVals.integer(forKey:"serveChange")
+      if storedWS == 0{
+         serveChange = .everyTwoScores
+      }
+      else{
+         serveChange = intToServeChange(num: storedSC)
+      }
+
+      let storedAhead: Bool = !defVals.bool(forKey: "opposite of mustBeAheadBy2")
+      mustBeAheadBy2 = storedAhead
+
+
+      selectedServe = [false, false, false]
+      selectedServe[serveChangeToInt(s: serveChange)-1] = true
+
+      defVals.set(winningScore, forKey: "winningScore")
+      defVals.set(serveChangeToInt(s: serveChange), forKey:"serveChange")
+      defVals.set(!mustBeAheadBy2, forKey:"opposite of mustBeAheadBy2")//opposite is taken because we want default value to be true
+
       return true
    }
 

@@ -20,11 +20,11 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
    "Winner of last point serves", "Loser of last point serves"]
    
    @IBAction func updateLeadBy2(_ sender: Any) {
-      del.mustBeAheadBy2 = leadBy2Switch.isOn
+      del.setMustBeAheadBy2(val: leadBy2Switch.isOn)
    }
    @IBAction func updatePointsNeeded(_ sender: Any) {
-      del.winningScore = Int(pointsNeededStepper.value)
-      pointsNeededLabel.text = "Points required to win: \( del.winningScore!)"
+      del.setWinningScore(score: Int(pointsNeededStepper.value))
+      pointsNeededLabel.text = "Points required to win: \( del.getWinningScore())"
    }
 
    override func viewDidLoad() {
@@ -34,9 +34,9 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
       let app = UIApplication.shared
       del = app.delegate as? AppDelegate
 
-      pointsNeededStepper.value = Double(del.winningScore)
-      pointsNeededLabel.text = "Points required to win: \( del.winningScore!)"
-      leadBy2Switch.isOn = del.mustBeAheadBy2
+      pointsNeededStepper.value = Double(del.getWinningScore())
+      pointsNeededLabel.text = "Points required to win: \( del.getWinningScore())"
+      leadBy2Switch.isOn = del.getMustBeAheadBy2()
 
         // Do any additional setup after loading the view.
     }
@@ -70,16 +70,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
          }
          index+=1
       }
-      switch row{
-      case 0:
-         del.serveChange = .everyTwoScores
-      case 1:
-         del.serveChange = .winnerServes
-      case 2:
-         del.serveChange = .loserServes
-      default:
-         print("Trying to switch to row that does not exist in tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)")
-      }
+      del.setServeChange(val: row+1)
    }
 
     /*
