@@ -110,14 +110,14 @@ class ViewController: UIViewController {
       let app = UIApplication.shared
       del = app.delegate as? AppDelegate
 
-      p1ScoreBtn.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1)
-      p1ScoreBtn.layer.cornerRadius = 10
-      p2ScoreBtn.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1)
-      p2ScoreBtn.layer.cornerRadius = 10
+      p1ScoreBtn.backgroundColor = UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1)
+      p1ScoreBtn.layer.cornerRadius = 12
+      p2ScoreBtn.backgroundColor = UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1)
+      p2ScoreBtn.layer.cornerRadius = 12
 
-      settingsBtn.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+      settingsBtn.backgroundColor = .black //UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
       settingsBtn.layer.cornerRadius = 10
-      resetBtn.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+      resetBtn.backgroundColor = .black //UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
       resetBtn.layer.cornerRadius = 10
 
       self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
