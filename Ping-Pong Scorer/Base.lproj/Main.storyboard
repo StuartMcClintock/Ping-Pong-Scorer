@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KO9-9R-BqP">
-    <device id="retina6_5" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ping_Pong_Scorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 to Serve" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-Ju-Ua9">
-                                <rect key="frame" x="30" y="98" width="354" height="255"/>
+                                <rect key="frame" x="30" y="80" width="774" height="381"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="X4h-cX-hCD"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T8-Pb-i1K">
-                                <rect key="frame" x="25" y="809.66666666666663" width="90" height="40"/>
+                                <rect key="frame" x="30" y="1042" width="120" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="987-Ah-kjz"/>
                                     <constraint firstAttribute="width" constant="120" id="M3Z-AT-dzw"/>
@@ -100,10 +100,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-Oh-cRr" userLabel="p1View">
-                                <rect key="frame" x="5" y="383" width="409" height="110"/>
+                                <rect key="frame" x="192" y="491" width="450" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="27" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-ii-OxA">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="115"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="115" id="4iR-mT-07h"/>
                                             <constraint firstAttribute="width" constant="180" id="HGf-w2-xQl"/>
@@ -147,7 +147,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pZ-gN-5JL">
-                                        <rect key="frame" x="20" y="70" width="175" height="45"/>
+                                        <rect key="frame" x="0.0" y="121" width="280" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="27k-ut-Cb4"/>
                                             <constraint firstAttribute="width" constant="175" id="6An-WL-XHA"/>
@@ -157,7 +157,7 @@
                                             <constraint firstAttribute="height" constant="40" id="geY-g3-IPg"/>
                                             <constraint firstAttribute="width" constant="280" id="xoF-nW-9f2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="44"/>
                                         <state key="normal" title="Point Scored">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -173,21 +173,21 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                             <mask key="constraints">
                                                 <include reference="bPJ-ax-C3Z"/>
                                                 <include reference="geY-g3-IPg"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                             <mask key="constraints">
                                                 <include reference="27k-ut-Cb4"/>
                                                 <include reference="Cl2-6K-FEc"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                             <mask key="constraints">
                                                 <include reference="6An-WL-XHA"/>
                                                 <include reference="Eol-Rb-jYn"/>
@@ -299,10 +299,10 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPo-a2-cKS" userLabel="p2View">
-                                <rect key="frame" x="5" y="548" width="409" height="110"/>
+                                <rect key="frame" x="192" y="781" width="450" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mka-GO-Q9J">
-                                        <rect key="frame" x="20" y="74" width="175" height="45"/>
+                                        <rect key="frame" x="0.0" y="121" width="280" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="175" id="14A-nh-E7j"/>
                                             <constraint firstAttribute="height" constant="40" id="D6Q-bR-k2q"/>
@@ -312,7 +312,7 @@
                                             <constraint firstAttribute="width" constant="165" id="r5r-wh-CHK"/>
                                             <constraint firstAttribute="width" constant="280" id="z3R-ze-y00"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                         <state key="normal" title="Point Scored">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -328,7 +328,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                             <mask key="constraints">
                                                 <include reference="D6Q-bR-k2q"/>
                                                 <include reference="r5r-wh-CHK"/>
@@ -347,7 +347,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="44"/>
                                             <mask key="constraints">
                                                 <include reference="z3R-ze-y00"/>
                                             </mask>
@@ -357,7 +357,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="27" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-ng-Ah2">
-                                        <rect key="frame" x="20" y="9" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="115"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="C4l-Oq-IQg"/>
                                             <constraint firstAttribute="height" constant="60" id="Oe5-t8-e1c"/>
@@ -494,18 +494,18 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zz-9H-QIu">
-                                <rect key="frame" x="299" y="812" width="90" height="35"/>
+                                <rect key="frame" x="634" y="1042" width="170" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="6pe-kv-oAG"/>
+                                    <constraint firstAttribute="width" constant="100" id="6pe-kv-oAG"/>
                                     <constraint firstAttribute="height" constant="40" id="DUo-xK-3YE"/>
                                     <constraint firstAttribute="height" constant="55" id="ERe-c1-D30"/>
                                     <constraint firstAttribute="width" constant="170" id="Nwx-3B-E3M"/>
-                                    <constraint firstAttribute="width" constant="90" id="SMs-dL-4tC"/>
+                                    <constraint firstAttribute="width" constant="100" id="SMs-dL-4tC"/>
                                     <constraint firstAttribute="width" constant="110" id="Y5L-UU-ZBc"/>
                                     <constraint firstAttribute="height" constant="35" id="osc-ZC-PJf"/>
                                     <constraint firstAttribute="height" constant="40" id="tQz-vs-N0U"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="38"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -521,20 +521,20 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="22"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                     <mask key="constraints">
                                         <exclude reference="DUo-xK-3YE"/>
                                         <include reference="Y5L-UU-ZBc"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="22"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                     <mask key="constraints">
                                         <include reference="6pe-kv-oAG"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="22"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                     <mask key="constraints">
                                         <include reference="SMs-dL-4tC"/>
                                         <exclude reference="tQz-vs-N0U"/>
@@ -976,11 +976,11 @@
             <objects>
                 <viewController id="1ka-3c-IN2" customClass="SettingsViewController" customModule="Ping_Pong_Scorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UpA-SA-sjf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points required to win: 11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-cK-mQt">
-                                <rect key="frame" x="20" y="113" width="195" height="20"/>
+                                <rect key="frame" x="20" y="95" width="255" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="195" id="QWG-51-jZD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="gIa-aL-I5h"/>
@@ -1004,13 +1004,13 @@
                                 </variation>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minimumValue="1" maximumValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="MHE-ZW-lhy">
-                                <rect key="frame" x="225" y="108.66666666666667" width="94" height="29.000000000000014"/>
+                                <rect key="frame" x="285" y="95" width="94" height="29"/>
                                 <connections>
                                     <action selector="updatePointsNeeded:" destination="1ka-3c-IN2" eventType="valueChanged" id="Zgn-5p-X06"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner must lead by 2 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V5n-Io-Mxd">
-                                <rect key="frame" x="19.999999999999986" y="168" width="222.66666666666663" height="20.666666666666657"/>
+                                <rect key="frame" x="20" y="159" width="300" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9rE-xc-QEs"/>
                                     <constraint firstAttribute="height" constant="33" id="IPl-Dg-jxx"/>
@@ -1033,7 +1033,7 @@
                                 </variation>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPu-Tl-blm">
-                                <rect key="frame" x="252.66666666666663" y="163" width="51" height="31"/>
+                                <rect key="frame" x="335" y="160" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="0Ab-Gp-IA3"/>
                                 </constraints>
@@ -1047,17 +1047,17 @@
                                 </connections>
                             </switch>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gWe-6B-dru">
-                                <rect key="frame" x="0.0" y="223.66666666666663" width="389" height="128"/>
+                                <rect key="frame" x="0.0" y="222" width="809" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="cCe-j8-TRU"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="serveModeCell" id="anv-z7-zrV">
-                                        <rect key="frame" x="0.0" y="28" width="389" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="809" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="anv-z7-zrV" id="vq3-sM-Zyw">
-                                            <rect key="frame" x="0.0" y="0.0" width="389" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="809" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1078,7 +1078,7 @@
                             <constraint firstItem="8aJ-cK-mQt" firstAttribute="top" secondItem="mz5-VR-s63" secondAttribute="top" constant="25" id="Wya-vE-Ik9"/>
                             <constraint firstItem="mz5-VR-s63" firstAttribute="trailing" secondItem="MHE-ZW-lhy" secondAttribute="trailing" constant="715" id="ccb-fS-lML"/>
                             <constraint firstItem="8aJ-cK-mQt" firstAttribute="leading" secondItem="mz5-VR-s63" secondAttribute="leading" constant="15" id="dxn-ob-GCO"/>
-                            <constraint firstItem="gWe-6B-dru" firstAttribute="top" secondItem="V5n-Io-Mxd" secondAttribute="bottom" constant="35" id="epr-nR-z2V"/>
+                            <constraint firstItem="gWe-6B-dru" firstAttribute="top" secondItem="V5n-Io-Mxd" secondAttribute="bottom" constant="30" id="epr-nR-z2V"/>
                             <constraint firstItem="mz5-VR-s63" firstAttribute="trailing" secondItem="gWe-6B-dru" secondAttribute="trailing" constant="25" id="hPR-6w-eIm"/>
                             <constraint firstItem="gWe-6B-dru" firstAttribute="leading" secondItem="mz5-VR-s63" secondAttribute="leading" id="psL-q4-qpY"/>
                             <constraint firstItem="8aJ-cK-mQt" firstAttribute="top" secondItem="gWe-6B-dru" secondAttribute="bottom" constant="30" id="qL0-oq-3fD"/>
@@ -1163,7 +1163,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KO9-9R-BqP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="trZ-o6-5uR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
